@@ -1,0 +1,13 @@
+:root {
+    --web: 1248px;
+    --ipad:820px;
+    --iphone:500px;
+  }
+
+  @media screen and (max-width: var(--ipad)) {
+    
+  }
+
+  @media screen and (max-width: var(--iphone)) {
+    
+  }
