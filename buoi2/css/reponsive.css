@@ -1,13 +1,38 @@
 :root {
-    --web: 1248px;
-    --ipad:820px;
-    --iphone:500px;
+  --web: 1248px;
+  --ipad: 820px;
+  --iphone: 500px;
+}
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .d-block > .ul-one
+  {
+    display: none;
+  }
+ 
+  .side-menu {
+    display: none;
   }
 
-  @media screen and (max-width: var(--ipad)) {
+ .d-block > .nav-bar {
+    display: block;
     
+}
+  .side-menu:checked~.hamb .bar-nav {
+    background: transparent;
   }
 
-  @media screen and (max-width: var(--iphone)) {
-    
+  .side-menu:checked~.hamb .bar-nav::before {
+    transform: rotate(-45deg);
+    top: 0;
   }
+
+  .side-menu:checked~.hamb .bar-nav::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
