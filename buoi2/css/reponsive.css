@@ -6,8 +6,11 @@
 * {
   box-sizing: border-box;
 }
-
+/* IPAD */
 @media screen and (max-width: 800px) {
+  .div-home > .btn-buy {
+    width: 30%;
+}
   .d-block > .ul-one
   {
     display: none;
@@ -34,8 +37,33 @@
     transform: rotate(45deg);
     top: 0;
   }
+  .div-home
+  {
+    text-align: center;
+  }
 }
 
+/* MOBILE */
+@media screen and (max-width: 650px) {
+  .gird-2 {
+   
+    grid-template-columns: auto;
+  }
+  div > .gird-2 {
+    grid-template-columns: auto;
+}
+
+}
+
+/* WEB OTHERS */
+@media screen and (max-width: 1350px) {
+  .div-home
+  {
+    text-align: center;
+  }
+}
+
+/* /** */
 
 @media screen and (max-width: 200px) {
   body{
