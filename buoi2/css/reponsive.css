@@ -36,3 +36,9 @@
   }
 }
 
+
+@media screen and (max-width: 200px) {
+  body{
+    display: none;
+  }
+}

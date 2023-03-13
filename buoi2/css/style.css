@@ -15,11 +15,20 @@ html {
 body {
     margin: 0;
 }
-
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #ca0000;
+    color: #fff;
+    font-weight: 600;
+}
 .ul-one {
     display: flex;
     gap: 100px;
 }
+
+
+
 
 li {
     list-style-type: none;
@@ -28,11 +37,16 @@ li {
 a {
     text-decoration: none;
     color: #fff;
+    font-family: sans-serif;
 }
-
 .nav {
     padding: 15px;
-    background-color: #464646;
+    background-color: #ca0000;
+    overflow: hidden;
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    width: 100%;
 
 }
 
@@ -119,4 +133,64 @@ a {
     position: relative;
     width: 24px;
 
+}
+
+
+/* card1 */
+.img-banner { position: relative; overflow: hidden; }
+
+.img-banner img {  top: 0; left: 0; opacity: 0; transition: opacity 1s linear; }
+
+.img-banner .img-1 img { opacity: 1; }
+.img-1{position: absolute;}
+.img-1 > img {width: 100%;}
+.img-2 > img {width: 100%;}
+.gird-2
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+.div-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    gap: 35px;
+}
+.logo-text
+{
+    text-transform: uppercase; 
+    font-size: 45px;
+    font-weight: 700;
+}
+.slg
+{
+    font-size: 25px;
+    font-weight: 500;
+    color: #6c6c6cfd;
+}
+
+.btn-buy {
+    background-color: #03A9F4;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    width: 16%;
+    border-radius: 8px;
+}
+.btn-buy:hover{
+    cursor: pointer;
+    background-color: #43bcf5;
+    box-shadow: 0px 0px 5px #43bcf5;
+}
+.w100{
+    width: 100%;
 }
