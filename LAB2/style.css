@@ -1,0 +1,85 @@
+
+body
+{
+    margin: 0;
+}
+.text-1
+{
+    font-weight: 600;
+}
+.p10{
+    padding: 10px;
+}
+.img-1
+{
+    width: 100%;
+}
+@media screen and (max-width: 480px){
+    .text-1 {
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+    .text-2
+    {
+        padding-top: 10px;
+    }
+}
+
+
+
+
+/* BAI 2 */
+header
+{
+    background-color:#4CAF50 ;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-weight: 700;
+   
+}
+footer {
+    background-color: #da952d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+section
+{
+    background-color: #FF9800;
+}
+.text-tt {
+    font-size: 32px;
+    font-weight: 600;
+}
+#bai2
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section {
+    background-color: rgb(255, 152, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    place-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 768px){
+    section {
+        width: 80%;
+    }
+    header
+    {
+        text-align: center;
+    }
+}

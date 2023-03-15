@@ -3,27 +3,34 @@
   --ipad: 820px;
   --iphone: 500px;
 }
+
 * {
   box-sizing: border-box;
 }
+
 /* IPAD */
-@media screen and (max-width: 800px) {
-  .div-home > .btn-buy {
+@media screen and (max-width: 820px) {
+  div>.div-home {
+    height: 400px;
+  }
+
+  .div-home>.btn-buy {
     width: 30%;
-}
-  .d-block > .ul-one
-  {
+  }
+
+  .d-block>.ul-one {
     display: none;
   }
- 
+
   .side-menu {
     display: none;
   }
 
- .d-block > .nav-bar {
+  .d-block>.nav-bar {
     display: block;
-    
-}
+
+  }
+
   .side-menu:checked~.hamb .bar-nav {
     background: transparent;
   }
@@ -37,28 +44,77 @@
     transform: rotate(45deg);
     top: 0;
   }
-  .div-home
-  {
+
+  .div-home {
     text-align: center;
   }
 }
 
 /* MOBILE */
 @media screen and (max-width: 650px) {
-  .gird-2 {
+  div > div > .img-produc {
+    width: 50%;
+    padding: 10px 30px 50px;
+    transition: transform .3s ease-out;
+    margin: auto;
+}
+  div > .card-3 {
    
-    grid-template-columns: auto;
-  }
-  div > .gird-2 {
-    grid-template-columns: auto;
+    padding: 0;
+   
+}
+ nav >  .pr-25 {
+    padding-right: 5px;
+}
+nav >  .pl-25 {
+    padding-left: 5px;
 }
 
+  div>.gird-2 {
+    padding-top: 0; 
+    grid-template-columns: auto;
+  }
+
+  div>.text-tt3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+  div > .gird-footer {
+    display: grid;
+    grid-template-columns: AUTO;
+}
+footer > .h-footer {
+  padding-left: 20px;
+}
+  div >.h-ic {
+    width: 40px;
+    top: 0;
+    position: absolute;
+    left: auto;
+}
+  div > .relative>.img-vt-sale {
+    position: absolute;
+    width: 25%;
+    left: 80%;
+    top: -9px;
+    animation: rung 1s ease infinite;
+  }
+
+  .slick-list>.slick-track {
+    gap: 0;
+  }
+  div > .ntiendat-store
+{
+  min-height: auto;
+}
 }
 
 /* WEB OTHERS */
 @media screen and (max-width: 1350px) {
-  .div-home
-  {
+  .div-home {
     text-align: center;
   }
 }
@@ -66,7 +122,7 @@
 /* /** */
 
 @media screen and (max-width: 200px) {
-  body{
+  body {
     display: none;
   }
 }

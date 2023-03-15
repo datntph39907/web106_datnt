@@ -1,3 +1,53 @@
+$(document).ready(function(){
+    $('#myModal').modal('show');
+    $('.regular').slick({
+      dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 820,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 650,
+            settings: {
+              infinite: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('.dg-store').slick({
+        dots: true,
+        infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1100,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+  });
+ 
 function menu() {
     var x = document.getElementById("menuMB");
 
@@ -8,14 +58,20 @@ function menu() {
     }
 }
 let imgBanner = document.querySelector('.img-banner');
- let img1 = document.querySelector('.img-1 img');
-  let img2 = document.querySelector('.img-2 img'); 
-  let showImage = function () {
-     setTimeout(function () { img1.style.opacity = '0'; 
-     img2.style.opacity = '1'; hideImage();
-     }, 8000); }
-      let hideImage = function () { 
-        setTimeout(function () { img2.style.opacity = '0'; 
-        img1.style.opacity = '1'; showImage(); }, 8000); 
-    }
-     showImage();
+let img1 = document.querySelector('.img-1 img');
+let img2 = document.querySelector('.img-2 img');
+let showImage = function () {
+    setTimeout(function () {
+        img1.style.opacity = '0';
+        img2.style.opacity = '1'; hideImage();
+    }, 8000);
+}
+let hideImage = function () {
+    setTimeout(function () {
+        img2.style.opacity = '0';
+        img1.style.opacity = '1'; showImage();
+    }, 8000);
+}
+showImage();
+
+

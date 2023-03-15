@@ -1,95 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/reponsive.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
     <title>Trang chủ</title>
 </head>
+
 <body>
 
-<nav class="nav">
-   <div class="d-flex align-center justify-between pl-25 pr-25">
-  
-      <a href="./">  <img class="logo" src="./img/logo_vip.png" alt=""></a>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
-   <div class="d-block">
-    <div  class="nav-bar">
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu" onclick="menu()"> <span class="bar-nav"></span></label>
-     </div>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Notification</h4>
+                </div>
+                <div class="modal-body">
+                 <img src="./img/social_media_feed_instagram_black_friday_for_unmissable_offers.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  
+                </div>
+            </div>
 
-    <ul class="ul-one">
-        <li>
-            <a href="./"> Home</a>
-        </li>
-        <li>
-            <a href="./"> Product</a>
-        </li>
-        <li>
-            <a href="./"> Contact</a>
-        </li>
-    </ul>
-   </div>
-   </div>
-   <div class="menu-2" id="menuMB">
-    <ul class="ul-two">
-        <li>
-            <a href="./"> Home</a>
-        </li>
-        <li>
-            <a href="./"> Product</a>
-        </li>
-        <li>
-            <a href="./"> Contact</a>
-        </li>
-       </ul>
-</div>
-</nav>
-
-<div>
-<div class="img-banner">
-    <div class="img-1">
-        <img src="./img/coverR8-01-e1677479875379.png" style="width: 100%;" alt="">
+        </div>
     </div>
-   <div class="img-2">
-    <img src="./img/coverR50-01-e1677479865910.png" alt="">
-   </div>
-</div>
-<div class="gird-2">
-<div class="div-home">
-   <div class="logo-text">ntiendat</div>
-   <div class="slg">
-    Dealer in the number 1 Canon camera store in Vietnam.
-   </div>
-   <div>
-    We provide the latest canon camera equipment today, with great service advantages.
-   </div>
-   <button class="btn-buy">Buy Now</button>
-</div>
-<div class="relative mga">
-    <img src="./img/tax-may-chup-anh.png" class="w100" alt="">
-    <img src="./img/gif/hot-icon.gif" class="h-icon" alt="">
-</div>
-
-</div>
+    <!--END-->
 
 
 
-
-
-
-
-
-<footer>
     <div>
-        NTIENDAT © 2023 All rights reserved
+        <nav class="navmenu">
+            <div class="d-flex align-center justify-between pl-25 pr-25">
+
+                <a href="./"> <img class="logo" src="./img/logo_vip.png" alt=""></a>
+
+                <div class="d-block">
+                    <div class="nav-bar">
+                        <input class="side-menu" type="checkbox" id="side-menu" />
+                        <label class="hamb" for="side-menu" onclick="menu()"> <span class="bar-nav"></span></label>
+                    </div>
+
+                    <ul class="ul-one">
+                        <li>
+                            <form action="" class="form-s">
+                                <input type="text" placeholder="search">
+                                <button id="button"><i class="fas fa-search"></i></button>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="./"> Home</a>
+                        </li>
+                        <li>
+                            <a href="./"> Product</a>
+                        </li>
+                        <li>
+                            <a href="./"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-2" id="menuMB">
+                <ul class="ul-two">
+
+                    <li>
+                        <a href="./"> Home</a>
+                    </li>
+                    <li>
+                        <a href="./"> Product</a>
+                    </li>
+                    <li>
+                        <a href="./"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./img/coverR50-01-e1677479865910.png" alt="" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="./img/coverR8-01-e1677479875379.png" alt="" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="./img/COVERr6markii-1-01-e1668410113610.png" alt="" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="./img/EOS-R7ss-01-e1668580984972.png" alt="" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="./img/R5C-BANNER1-e1647665876742.png" alt="" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="gird-2">
+            <div class="">
+                <div class="div-home">
+                    <div class="logo-text">ntiendat</div>
+                    <svg width="96" height="4" viewBox="0 0 96 4" class="mx-auto bar-ntd" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.5" y1="2" x2="95.5" y2="2" stroke="#0A84FF" stroke-width="4"></line>
+                    </svg>
+                    <div class="slg">
+                        Dealer in the number 1 Canon camera store in Vietnam.
+                    </div>
+                    <div>
+                        We provide the latest canon camera equipment today, with great service advantages.
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <img src="./img/eos-r3-frontslant-rf-24-70mm-f2_gallery.png" class="w60" alt="">
+
+
+        </div>
+
+        <div>
+            <div class="text-tt3 relative">Best Selling Product <img src="./img/gif/hot-icon.gif" alt="" class="h-ic">
+            </div>
+            <div class="regular slider">
+              <!--Star-->
+              <div>
+                <div class="relative card-prd">
+                    <img src="img/canon-r-3.jpg" class="img-produc">
+                    <img src="./img/mgs.png" class="img-vt-sale" alt="">
+                  <img src="./img/Buy-Now-PNG-Clipart.png" class="img-vt-saleq dn" alt="">
+                    <span class="price-prd">1,300$</span>
+                </div>
+                <div class="tt-prd">Canon EOS R (Body Only), 100% New (Genuine)</div>
+                <div class="rating">
+
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="text_comment"> (19 Comment)</span>
+                    <div class="product-price">1500$</div>
+                </div>
+
+            </div>
+              <!--end-->
+               <!--Star-->
+               <div>
+                <div class="relative card-prd">
+                    <img src="img/canon-eos-r7.png" class="img-produc">
+                    <img src="./img/mgs.png" class="img-vt-sale" alt="">
+                    <img src="./img/Buy-Now-PNG-Clipart.png" class="img-vt-saleq dn" alt="">
+                    <span class="price-prd">1,500$</span>
+                </div>
+                <div class="tt-prd">Canon EOS R7 (Body Only), 100% New (Genuine)</div>
+                <div class="rating">
+
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                                class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="text_comment"> (34 Comment)</span>
+                    <div class="product-price">2100$</div>
+                </div>
+
+            </div>
+              <!--end-->
+               <!--Star-->
+               <div>
+                <div class="relative card-prd">
+                    <img src="img/canon-6d-mark-ii.jpg" class="img-produc">
+                    <img src="./img/mgs.png" class="img-vt-sale" alt="">
+                    <img src="./img/Buy-Now-PNG-Clipart.png" class="img-vt-saleq dn" alt="">
+                    <span class="price-prd">1,000$</span>
+                </div>
+                <div class="tt-prd">Canon 6D Mark II (Body Only), 100% New (Genuine)</div>
+                <div class="rating">
+
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                                class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="text_comment"> (2 Comment)</span>
+                    <div class="product-price">1800$</div>
+                </div>
+
+            </div>
+              <!--end-->
+               <!--Star-->
+               <div>
+                <div class="relative card-prd">
+                    <img src="img/canon-eos-r3-1.jpg" class="img-produc">
+                    <img src="./img/mgs.png" class="img-vt-sale" alt="">
+                    <img src="./img/Buy-Now-PNG-Clipart.png" class="img-vt-saleq dn" alt="">
+                    <span class="price-prd">6,300$</span>
+                </div>
+                <div class="tt-prd">Canon EOS R3 (Body Only), 100% New (Genuine)</div>
+                <div class="rating">
+
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="text_comment"> (1 Comment)</span>
+                    <div class="product-price">8000$</div>
+                </div>
+
+            </div>
+              <!--end-->
+               <!--Star-->
+               <div>
+                <div class="relative card-prd">
+                    <img src="img/canon-1dx-mark-iii-2.jpg" class="img-produc">
+                    <img src="./img/mgs.png" class="img-vt-sale" alt="">
+                    <img src="./img/Buy-Now-PNG-Clipart.png" class="img-vt-saleq dn" alt="">
+                    <span class="price-prd">8,300$</span>
+                </div>
+                <div class="tt-prd">Canon 1D X Mark III (Body Only), 100% New (Genuine)</div>
+                <div class="rating">
+
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                                class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="text_comment"> (178 Comment)</span>
+                    <div class="product-price">10000$</div>
+                </div>
+
+            </div>
+              <!--end-->
+               <!--Star-->
+               <div>
+                <div class="relative card-prd">
+                    <img src="img/canon-r-3.jpg" class="img-produc">
+                    <img src="./img/mgs.png" class="img-vt-sale" alt="">
+                  
+                    <span class="price-prd">1,300$</span>
+                </div>
+                <div class="tt-prd">Canon EOS R (Body Only), 100% New (Genuine)</div>
+                <div class="rating">
+
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+                            class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i></span>
+
+                    <span class="text_comment"> (7 Comment)</span>
+                    <div class="product-price">1500$</div>
+                </div>
+
+            </div>
+              <!--end-->
+        
+
+            </div>
+
+
+        </div>
+<div class="card-3">
+    <div class="text-store">NTIENDAT STORE SYSTEM NATIONWIDE</div>
+    <div class="dg-store slider">
+<div class="ntiendat-store">
+    <div>
+        <img src="./img/st1.jpg"  height="250" width="250">
+        <div>
+            <div class="text-5">NTIENDAT PHU THO (HEADQUARTERS)</div>
+            <div class="if-store"><i class="fas fa-map-marker-alt"></i>Huong Xa, Ha Hoa, Phu Tho, Viet Nam</div>
+        <div class="if-store pb16"><i class="fas fa-phone-alt"></i>012345678</div>
+        </div>
     </div>
-</footer>
+    
+</div>
+<div class="ntiendat-store">
+    <div>
+        <img src="./img/278396601-577966636622797-7970318720345048466-n-500x500.jpg"  height="250" width="250">
+        <div>
+            <div class="text-5">NTIENDAT HA NOI</div>
+            <div class="if-store"><i class="fas fa-map-marker-alt"></i>Trinh Van Bo, Phuong Canh, Nam Tu Liem, Ha Noi, Viet Nam</div>
+        <div class="if-store pb16"><i class="fas fa-phone-alt"></i>08756782763</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="ntiendat-store">
+    <div>
+        <img src="./img/djistoredn-500x500.jpg"  height="250" width="250">
+        <div>
+            <div class="text-5">NTIENDAT HO CHI MINH </div>
+            <div class="if-store"><i class="fas fa-map-marker-alt"></i>Nguyen Cu Trinh, Quan 1, Ho Chi Minh, Viet Nam</div>
+        <div class="if-store pb16"><i class="fas fa-phone-alt"></i>02456784333</div>
+        </div>
+    </div>
+    
+</div>
 
 
+
+
+    </div>
+</div>
+
+
+
+
+
+        <footer>
+            <div class="h-footer">
+                <div class="logo-footer">NTIENDAT</div>
+                <div class="slg-footer">NTIENDAT . INVESTMENT JOINT STOCK COMPANY</div>
+                <div class="gird-footer">
+                    <div class="flex-footer next-t">
+                        <div class="text-tt2">Contact</div>
+                        <div class="flex-footer-2"><i class="fas fa-envelope"></i>datntph39907@fpt.edu.vn</div>
+                        <div class="flex-footer-2"><i class="fas fa-phone-square-alt"></i>12345678xx</div>
+                        <div class="flex-footer-2"><i class="fab fa-facebook-square"></i>facebook.com/canon</div>
+                        <div class="flex-footer-2"><i class="fas fa-map-marker-alt"></i>Trinh Van Bo, Phuong Canh, Nam
+                            Tu
+                            Liem, Ha Noi</div>
+                    </div>
+
+                    <div class="flex-footer">
+                        <div class="text-tt2">Payment Methods</div>
+                        <div class="gird-card">
+
+                            <div class="item-card"><img src="./img/ft-img6.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img7.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img8.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img9.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img10.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img11.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img12.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img13.png" alt=""></div>
+                            <div class="item-card"><img src="./img/ft-img14.png" alt=""></div>
+                        </div>
+
+                    </div>
+                    <div></div>
+                    <div class="flex-footer">
+                        <div class="text-tt2">Link</div>
+                        <div class="flex-footer-2"><a href="#Policy" class="t-link">Policy</a></div>
+                        <div class="flex-footer-2"><a href="#PolicyWarranty" class="t-link">Policy Warranty</a></div>
+                        <div class="flex-footer-2"><a href="#Transport" class="t-link">Transport</a></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="low-footer">
+                NTIENDAT © 2023 All rights reserved
+            </div>
+        </footer>
+
+    </div>
+   
+
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/app.js"></script>
 </body>
+
 </html>
