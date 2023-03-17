@@ -2,6 +2,204 @@ body {
     margin: 0;
     background-color: #f3f3f3;
 }
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-BookItalic.woff2') format('woff2'),
+        url('./fonts/OperatorMono-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-Light.woff2') format('woff2'),
+        url('./fonts/OperatorMono-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-Book.woff2') format('woff2'),
+        url('./fonts/OperatorMono-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-BoldItalic.woff2') format('woff2'),
+        url('./fonts/OperatorMono-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-LightItalic.woff2') format('woff2'),
+        url('./fonts/OperatorMono-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-Bold.woff2') format('woff2'),
+        url('./fonts/OperatorMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-XLight.woff2') format('woff2'),
+        url('./fonts/OperatorMono-XLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-BoldItalic.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-XLightItalic.woff2') format('woff2'),
+        url('./fonts/OperatorMono-XLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-Heavy.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-Medium.woff2') format('woff2'),
+        url('./fonts/OperatorMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-Bold.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./fonts/OperatorMono-MediumItalic.woff2') format('woff2'),
+        url('./fonts/OperatorMono-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-Medium.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-RegularItalic.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-HeavyItalic.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-LightItalic.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-Semibold.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-MediumItalic.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-Regular.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-Light.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url('./fonts/SFMonoLigaturized-SemiboldItalic.woff2') format('woff2'),
+        url('./fonts/SFMonoLigaturized-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
 
 
 ul {
@@ -71,6 +269,9 @@ div>ul {
     border-left: 1px solid #96999e;
     text-align: center;
     padding: 10px;
+}
+li>a {
+   font-family: SF Mono;
 }
 .ntiendat>div > ul > li >a:hover
 {
@@ -242,8 +443,8 @@ li>a>span {
     gap: 2rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 40px;
+    padding-right:  40px;
     padding-top: 30px;
 
 }
@@ -254,11 +455,10 @@ li>a>span {
     position: absolute;
     left: 238px;
 }
-
 .div-home {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 0;
     gap: 20px;
@@ -269,6 +469,7 @@ li>a>span {
     width: 60%;
     display: block;
     margin: auto;
+    margin-top: 30px;
     transition: transform .3s ease-out;
 }
 
@@ -280,8 +481,13 @@ li>a>span {
     text-transform: uppercase;
     font-size: 45px;
     font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+.card-1-1 {
+    background-color: #607d8b17;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px 0px;
+}
 .slg {
     font-size: 25px;
     font-weight: 500;
@@ -341,7 +547,7 @@ li>a:hover {
     animation: rung 1s ease infinite
 }
 
-#button {
+.btn-search {
     position: absolute;
     left: 87%;
     border: none;
@@ -843,3 +1049,26 @@ button.slick-prev.slick-arrow {
     flex-wrap: wrap;
 
 }
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    
+   
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  

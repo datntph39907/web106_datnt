@@ -69,6 +69,47 @@ $(document).ready(function () {
  
 
 });
+
+
+
+
+
+
+$(function() {
+  var textArray = ["What search ?", "Canon", "NTIENDAT", "How to buy ?"];
+  var count = 0;
+  var input = $("#search");
+  var placeholder = input.attr("placeholder");
+
+  input.on("focus", function() {
+    clearInterval(animationInterval);
+  }).on("blur", function() {
+    startAnimation();
+  });
+
+  var animationInterval = setInterval(startAnimation, 3000);
+
+  function startAnimation() {
+    input.removeAttr("placeholder").attr("placeholder", " ");
+    setTimeout(function() {
+      input.attr("placeholder", "");
+      var newText = textArray[count % textArray.length];
+      count++;
+      var text = "";
+      var i = 0;
+      var typingInterval = setInterval(function() {
+        text += newText.charAt(i);
+        input.val(text);
+        i++;
+        if (i > newText.length) {
+          clearInterval(typingInterval);
+        }
+      }, 100);
+    }, 500);
+  }
+});
+
+
 function changeImage(element, imagePath) {
   element.src = imagePath;
 }
@@ -103,3 +144,12 @@ let hideImage = function () {
 showImage();
 
 
+const form = document.querySelector('.form-s');
+const searchInput = document.querySelector('#search');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const searchText = searchInput.value;
+  const searchQuery = `https://www.google.com/search?q=${searchText}`;
+  window.location.href = searchQuery;
+});

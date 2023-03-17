@@ -79,3 +79,77 @@ footer {
 .item-3 {
     flex-basis: 20%;
 }
+/*BAI 2 CSS */
+.dflex-2
+{
+    display: flex;
+}
+.card-2
+{
+    border: 1px solid #000;
+    flex-basis: 25%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card-2 > img
+{
+    width: 100%;
+}
+.card-2 > #text {
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.gap15
+{
+    gap:15px;
+}
+.avt
+{
+    border-radius: 50%;
+}
+.pd20
+{
+    padding: 20px;
+}
+div > #name,#job
+{
+    padding: 5px;
+}
+div > #name
+{
+    font-weight: 600;
+}
+button {
+    background-color: #F66092;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    width: 25%;
+}
+.dflex-3{
+    display: flex;
+}
+#live
+{
+    padding: 10px;
+    border-top: 1px solid #000;
+}
+.dfl
+{
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    div >.dflex-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+       
+    }
+    div > .avt {
+        border-radius: 50%;
+        width: 25%;
+    }
+}
