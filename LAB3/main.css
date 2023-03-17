@@ -1,0 +1,81 @@
+body
+{
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px){
+
+    #EX1 > .content {
+    margin-top: 10px;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+    height: 250px;
+}
+#EX1>header {
+    background-color: #0173ff;
+}
+
+#EX1>.dflex>div,
+.thanh-dieu-huong {
+    background-color: #ff6a2a;
+}
+
+#EX1>footer {
+    background-color: #2cff7d;
+   
+}
+#EX1 > .thanh-dieu-huong {
+    background-color: #ff1121;
+}
+}
+header {
+    background-color: #EEEEEE;
+    padding: 30px;
+    text-align: center;
+}
+
+.dflex>div,
+.thanh-dieu-huong {
+    background-color: #EEEEEE;
+}
+
+footer {
+    background-color: #EEEEEE;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.thanh-dieu-huong {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dflex {
+    display: flex;
+}
+
+.content {
+    margin-top: 10px;
+    gap: 10px;
+    text-align: center;
+}
+
+.item-1 {
+    flex-basis: 20%;
+}
+
+.dflex.content>div {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.item-2 {
+    flex-basis: 60%;
+}
+
+.item-3 {
+    flex-basis: 20%;
+}

@@ -10,6 +10,25 @@
 
 /* IPAD */
 @media screen and (max-width: 820px) {
+  ul > li>a>span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+  div > .ntiendat>div>ul {
+    line-height: 18px;
+    display: table;
+    width: 100%;
+   
+    font-size: 16px;
+}
+  div > div > .flex-box {
+   
+    max-width: 50%;
+    flex-basis: 50%;
+   
+}
   div>.div-home {
     height: 400px;
   }
@@ -52,6 +71,66 @@
 
 /* MOBILE */
 @media screen and (max-width: 650px) {
+  div > .ntiendat{
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    /*  1px solid #96999e; */
+    /* text-align: center; */
+    display: none;
+}
+ul > li>a>span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+}
+div > .ntiendat>div > ul > li >a {
+  display: flex;
+  position: relative;
+  color: #fff;
+  border: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+  div > .ntiendat>div>ul {
+    line-height: 18px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    font-size: 16px;
+}
+  .ntiendat-card-2 > .card-comment {
+    border: 1px solid #e5e5e5;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px 0px;
+}
+  div > .ntiendat-card-2
+  {
+    padding: 0 20px;
+  }
+  div > .ntiendat-card-3
+  {
+    padding: 0 20px;
+  }
+  .flext-cmt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+  .price-prd {
+    text-align: center;
+  }
+
+  nav > .menu-2 {
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-left: 8px;
+    display: none;
+}
   div > div > .img-produc {
     width: 50%;
     padding: 10px 30px 50px;
@@ -120,7 +199,14 @@ footer > .h-footer {
 }
 
 /* /** */
-
+@media screen and (max-width: 900px) {
+  div > div > .flex-box {
+   
+    max-width: 50%;
+    flex-basis: 50%;
+   
+}
+}
 @media screen and (max-width: 200px) {
   body {
     display: none;
