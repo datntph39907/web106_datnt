@@ -4,8 +4,8 @@ body {
 }
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-BookItalic.woff2') format('woff2'),
-        url('./fonts/OperatorMono-BookItalic.woff') format('woff');
+    src: url('../fonts/OperatorMono-BookItalic.woff2') format('woff2'),
+        url('../fonts/OperatorMono-BookItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -13,8 +13,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-Light.woff2') format('woff2'),
-        url('./fonts/OperatorMono-Light.woff') format('woff');
+    src: url('../fonts/OperatorMono-Light.woff2') format('woff2'),
+        url('../fonts/OperatorMono-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -22,8 +22,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-Book.woff2') format('woff2'),
-        url('./fonts/OperatorMono-Book.woff') format('woff');
+    src: url('../fonts/OperatorMono-Book.woff2') format('woff2'),
+        url('../fonts/OperatorMono-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -31,8 +31,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-BoldItalic.woff2') format('woff2'),
-        url('./fonts/OperatorMono-BoldItalic.woff') format('woff');
+    src: url('../fonts/OperatorMono-BoldItalic.woff2') format('woff2'),
+        url('../fonts/OperatorMono-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -40,8 +40,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-LightItalic.woff2') format('woff2'),
-        url('./fonts/OperatorMono-LightItalic.woff') format('woff');
+    src: url('../fonts/OperatorMono-LightItalic.woff2') format('woff2'),
+        url('../fonts/OperatorMono-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -49,8 +49,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-Bold.woff2') format('woff2'),
-        url('./fonts/OperatorMono-Bold.woff') format('woff');
+    src: url('../fonts/OperatorMono-Bold.woff2') format('woff2'),
+        url('../fonts/OperatorMono-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -58,8 +58,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-XLight.woff2') format('woff2'),
-        url('./fonts/OperatorMono-XLight.woff') format('woff');
+    src: url('../fonts/OperatorMono-XLight.woff2') format('woff2'),
+        url('../fonts/OperatorMono-XLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -67,8 +67,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-BoldItalic.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-BoldItalic.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-BoldItalic.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -76,8 +76,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-XLightItalic.woff2') format('woff2'),
-        url('./fonts/OperatorMono-XLightItalic.woff') format('woff');
+    src: url('../fonts/OperatorMono-XLightItalic.woff2') format('woff2'),
+        url('../fonts/OperatorMono-XLightItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -85,8 +85,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-Heavy.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-Heavy.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-Heavy.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -94,8 +94,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-Medium.woff2') format('woff2'),
-        url('./fonts/OperatorMono-Medium.woff') format('woff');
+    src: url('../fonts/OperatorMono-Medium.woff2') format('woff2'),
+        url('../fonts/OperatorMono-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -103,8 +103,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-Bold.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-Bold.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-Bold.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -112,8 +112,8 @@ body {
 
 @font-face {
     font-family: 'Operator Mono';
-    src: url('./fonts/OperatorMono-MediumItalic.woff2') format('woff2'),
-        url('./fonts/OperatorMono-MediumItalic.woff') format('woff');
+    src: url('../fonts/OperatorMono-MediumItalic.woff2') format('woff2'),
+        url('../fonts/OperatorMono-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -121,8 +121,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-Medium.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-Medium.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-Medium.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -130,8 +130,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-RegularItalic.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-RegularItalic.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-RegularItalic.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -139,8 +139,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-HeavyItalic.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-HeavyItalic.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-HeavyItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -148,8 +148,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-LightItalic.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-LightItalic.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-LightItalic.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -157,8 +157,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-Semibold.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-Semibold.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-Semibold.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -166,8 +166,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-MediumItalic.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-MediumItalic.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-MediumItalic.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -175,8 +175,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-Regular.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-Regular.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-Regular.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -184,8 +184,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-Light.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-Light.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-Light.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -193,8 +193,8 @@ body {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url('./fonts/SFMonoLigaturized-SemiboldItalic.woff2') format('woff2'),
-        url('./fonts/SFMonoLigaturized-SemiboldItalic.woff') format('woff');
+    src: url('../fonts/SFMonoLigaturized-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/SFMonoLigaturized-SemiboldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -493,14 +493,18 @@ li>a>span {
     font-weight: 500;
     color: #6c6c6cfd;
 }
-
+.gap-20
+{
+    gap: 20px;
+}
 .btn-buy {
     background-color: #03A9F4;
     border: none;
     padding: 10px;
     color: #fff;
-    width: 16%;
+    width: 100px;
     border-radius: 8px;
+    gap: 20px;
 }
 
 .hot-lg {
@@ -560,7 +564,7 @@ input[type="text"]:focus {
     outline: none;
 }
 
-input[type="text"] {
+.form-s > input[type="text"] {
     padding-left: 10px;
 
     border: 1px solid #fff;

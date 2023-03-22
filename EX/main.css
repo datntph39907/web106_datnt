@@ -1,0 +1,105 @@
+header > div {
+    color: #c3e4cf;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header > #text-1
+{
+    font-weight: 600;
+    font-size: 25px;
+}
+ul
+{
+    background-color: #15c455;
+    padding: 15px;
+}
+li {
+    display: inline-block;
+    padding-right: 40px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+#NTIENDAT
+{
+    background-color: #c3e4cf;
+}
+header
+{
+    background-color: #fff;
+}
+.dflex
+{
+    display: flex;
+}
+.bgw
+
+{
+    background-color: #fff;
+}
+.card-1
+{
+    flex-basis: 25%;
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+.text-tt
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+.card-1 > img
+{
+    padding-top: 20px;
+    margin: auto;
+    display: block;
+}
+#text-2
+{
+    padding: 20px 20px 20px 0;
+}
+.pt20
+{
+    padding-top: 20px;
+}
+footer
+{
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.card-2
+{
+    flex-basis: 75%;
+    padding: 15px;
+}
+#text-3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card-2 >img{width: 100%;}
+@media screen and (max-width: 768px){
+   
+    ul
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .dflex {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1 > img {
+        padding-top: 20px;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+}

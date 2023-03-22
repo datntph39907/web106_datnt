@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reponsive.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -20,13 +21,32 @@
     rel="stylesheet">
 
 
-    <title >Contact</title>
+    <title>Login</title>
 </head>
 
 <body>
 
     <!--MODAL-->
+   <!-- <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
+          
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Notification</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/social_media_feed_instagram_black_friday_for_unmissable_offers.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>-->
     <!--END-->
 
 
@@ -36,7 +56,7 @@
         <div id="ntiendat-custom-loc-1">
             <ul class="breadcrumb">
                 <li><a href="#">NTIENDAT</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
               
               </ul>
           <div><a href="">Hotline: 12345678xx</a></div>
@@ -69,10 +89,10 @@
                             <a href="./"> Home</a>
                         </li>
                         <li>
-                            <a href="product.html"> Product</a>
+                            <a href="./"> Product</a>
                         </li>
                         <li>
-                            <a href="contact.html"> Contact</a>
+                            <a href="./"> Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -84,17 +104,17 @@
                         <a href="./"> Home</a>
                     </li>
                     <li>
-                        <a href="product.html"> Product</a>
+                        <a href="./"> Product</a>
                     </li>
                     <li>
-                        <a href="contact.html"> Contact</a>
+                        <a href="./"> Contact</a>
                     </li>
                 </ul>
                 <div class="ntiendat-topw">
                     <div id="ntiendat-custom-loc-1">
                         <ul class="breadcrumb">
                             <li><a href="#">NTIENDAT</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Login</a></li>
                           
                           </ul>
                    
@@ -108,60 +128,41 @@
         </nav>
 
 
-
-
-
-     
+<div class="form-account">
+<div class="form-custom">
+    <form action="">
+        <div id="login-title">Login To NTIENDAT</div>
+    <div class="form-filed">
+        <label for="">UserName</label>
+    <input type="text" name="username" placeholder="enter username">
+    </div>
+    <div class="form-filed">
+        <label for="">PassWord</label>
+    <input type="password" name="password"  required placeholder="enter password">
+    </div>
+    <div class="checkbox-rmb">
+      <input type="checkbox" name="" id="">  
+     <div>Remember password ?</div>
+    </div>
 
    
 
-     
-<div class="contact">
-    <div class="gird-contact">
-<div class="card-contact">
-<div class="title-contact">NTIENDAT Store</div>
-<div class="item-contact">
-    <div class="text-6">NTIENDAT PHU THO (HEADQUARTERS)</div>
-    <div class="if-store2"><i class="fas fa-map-marker-alt"></i>Huong Xa, Ha Hoa, Phu Tho, Viet
-        Nam</div>
-        <div class="if-store2"><i class="fas fa-phone-alt"></i>012345678</div>
-</div>
-<div class="item-contact">
-    <div class="text-6">NTIENDAT HA NOI</div>
-    <div class="if-store2"><i class="fas fa-map-marker-alt"></i>Trinh Van Bo, Phuong Canh, Nam Tu
-        Liem, Ha Noi, Viet Nam</div>
-        <div class="if-store2"><i class="fas fa-phone-alt"></i>08756782763</div>
-</div>
-<div class="item-contact">
-    <div class="text-6">NTIENDAT HO CHI MINH</div>
-    <div class="if-store2"><i class="fas fa-map-marker-alt"></i>Nguyen Cu Trinh, Quan 1, Ho Chi
-        Minh, Viet Nam</div>
-        <div class="if-store2"><i class="fas fa-phone-alt"></i>02456784333</div>
-</div>
-</div>
-<div class="card-contact-2">
-    <div class="title-contact">Sign Up For Support</div>
-    <form action="">
-<div class="form-filed2">
-<label for="">Full name</label>
-<input type="text" name="fullname" placeholder="Enter fullname">
-</div>
-<div class="form-filed2">
-    <label for="">Phone number</label>
-    <input type="text" name="phonenumber" placeholder="Enter Phone number">
-    </div>
-    <div class="form-filed2">
-        <label for="">Content</label>
-       <textarea cols="30" rows="10"  type="text" name="content" placeholder="Enter Content"></textarea>
-        </div>
-<button type="button" onclick="showNotification()" >Submit</button>
+  <button type="button" onclick="showNotification()"">Login</button>
     </form>
+
+
+    <img src="./img/Canon A-1.jpg" alt="">
 </div>
-<div>
-    <img src="./img/r666.jpg" alt="">
 </div>
-    </div>
-</div>
+
+
+    
+      
+
+
+     
+
+
 
 
 
@@ -218,7 +219,7 @@
 
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/app.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 </html>

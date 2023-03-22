@@ -17,7 +17,7 @@ $(document).ready(function () {
       }
     }
   });
-  
+
 
   $('#myModal').modal('show');
   $('.regular').slick({
@@ -66,7 +66,7 @@ $(document).ready(function () {
       }
     ]
   });
- 
+
 
 });
 
@@ -75,15 +75,15 @@ $(document).ready(function () {
 
 
 
-$(function() {
+$(function () {
   var textArray = ["What search ?", "Canon", "NTIENDAT", "How to buy ?"];
   var count = 0;
   var input = $("#search");
   var placeholder = input.attr("placeholder");
 
-  input.on("focus", function() {
+  input.on("focus", function () {
     clearInterval(animationInterval);
-  }).on("blur", function() {
+  }).on("blur", function () {
     startAnimation();
   });
 
@@ -91,13 +91,13 @@ $(function() {
 
   function startAnimation() {
     input.removeAttr("placeholder").attr("placeholder", " ");
-    setTimeout(function() {
+    setTimeout(function () {
       input.attr("placeholder", "");
       var newText = textArray[count % textArray.length];
       count++;
       var text = "";
       var i = 0;
-      var typingInterval = setInterval(function() {
+      var typingInterval = setInterval(function () {
         text += newText.charAt(i);
         input.val(text);
         i++;
@@ -153,3 +153,7 @@ form.addEventListener('submit', (e) => {
   const searchQuery = `https://www.google.com/search?q=${searchText}`;
   window.location.href = searchQuery;
 });
+// Lấy thẻ button
+function showNotification() {
+  swal("Error !", "The site is not connected to the server.", "error");
+}
